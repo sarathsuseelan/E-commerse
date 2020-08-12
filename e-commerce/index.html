@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Style E-commerce</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Top navigation section -->
+    <section class="top-nav">
+        <!-- welcome navigation -->
+        <nav class="navbar navbar-expand-sm bg-dark bg-custom-dark navbar-dark">
+            <div class="row vw-100">
+                <ul class="navbar-nav d-none d-sm-flex col">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Checkout</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Wishlist</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav col d-none d-sm-flex justify-content-md-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Welcome To Our Fasion Store</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav xs-row col justify-content-md-end">
+                    <li class="nav-item top-nav-icon-outer active">
+                        <a class="nav-link li-icon" href="#">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                <path fill-rule="evenodd"
+                                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item active top-nav-icon-outer">
+                        <a class="nav-link li-icon" href="#">
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item active top-nav-icon-outer">
+                        <a class="nav-link li-icon" href="#">
+                            <span class="cart-count">0</span>
+                            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- welcome navigation -->
+    </section>
+    <!-- Top navigation section -->
+    <!-- logonavigation -->
+    <section class="logo-sec d-none d-sm-flex">
+        <nav class="navbar w-100 navbar-light custom-white bg-light">
+            <div class="row vw-100">
+                <div class="col d-flex flex-row flex-wrap align-items-center justify-content-start">
+                    <div class="btn-sec d-flex w-100">
+                        <button type="button" class="btn nav-btn btn-light">Call us:</button>
+                    </div>
+                    <div class="num-sec d-flex w-100">
+                        9876543210
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <span class="logo-img">
+                        <img src="assets/logo.jpg" alt="logo" draggable="false">
+                    </span>
+                </div>
+                <div class="col d-flex flex-row flex-wrap align-items-center">
+                    <div class="btn-sec d-flex w-100 justify-content-end">
+                        <button type="button" class="btn nav-btn follow-btn btn-light">Follow Us:</button>
+                    </div>
+                    <div class="socialicon-sec d-flex w-100 justify-content-end">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-tumblr" aria-hidden="true"></i>
+                        <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+                        <i class="fa fa-vimeo" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- logonavigation -->
+    <!-- menuoptions -->
+    <section class="menu-res-nav">
+        <!-- menu navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light custom-white nav-padd bg-light">
+            <a class="navbar-brand logo-brand d-flex d-md-none" href="#">St<span>y</span>le</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-md-center navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="tag">New</span>
+                        <a class="nav-link" href="#">Accesories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="tag sale">Sale</span>
+                        <a class="nav-link" href="#">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="tag hot">Hot</span>
+                        <a class="nav-link" href="#">FAQS</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="tag">New</span>
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- menu navbar -->
+    </section>
+    <!-- menuoptions -->
+    <!-- carousel banner -->
+    <section class="top-banner">
+        <!-- banner-section -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row banner-text">
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <span class="trend-txt">Trend design!</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <h1 class="banner-head">Women's Wear</h1>
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center form-group">
+                            <input type="text" class="form-control justify-content-md-center" id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="20% discount Over $39 purchase use code:FASHION1930">
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <button type="button" class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                    <img class="d-block w-100" src="assets/banner.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="row banner-text">
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <span class="trend-txt">Trend design!</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <h1 class="banner-head">Women's Wear</h1>
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center form-group">
+                            <input type="text" class="form-control justify-content-md-center" id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="20% discount Over $39 purchase use code:FASHION1930">
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <button type="button" class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                    <img class="d-block w-100" src="assets/banner.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <div class="row banner-text">
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <span class="trend-txt">Trend design!</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <h1 class="banner-head">Women's Wear</h1>
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center form-group">
+                            <input type="text" class="form-control justify-content-md-center" id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="20% discount Over $39 purchase use code:FASHION1930">
+                        </div>
+                        <div class="col-12 d-flex justify-content-md-center">
+                            <button type="button" class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                    <img class="d-block w-100" src="assets/banner.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2">
+                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                </svg>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                    width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2">
+                    <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                </svg>
+            </a>
+        </div>
+        <!-- banner-section -->
+    </section>
+    <!-- carousel banner -->
+    <!-- supportview -->
+    <section class="support-sec">
+        <div class="container-fluid">
+            <div class="row support-view w-100 m-0">
+                <div class="col-12 col-sm-3 support-card d-flex align-items-center">
+                    <span class="support-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.018 7.5h2.49c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5zM2.255 4H4.09a9.266 9.266 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.024 7.024 0 0 0 2.255 4zM8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm-.5 1.077c-.67.204-1.335.82-1.887 1.855-.173.324-.33.682-.468 1.068H7.5V1.077zM7.5 5H4.847a12.5 12.5 0 0 0-.338 2.5H7.5V5zm1 2.5V5h2.653c.187.765.306 1.608.338 2.5H8.5zm-1 1H4.51a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm1 2.5V8.5h2.99a12.495 12.495 0 0 1-.337 2.5H8.5zm-1 1H5.145c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12zm-2.173 2.472a6.695 6.695 0 0 1-.597-.933A9.267 9.267 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM1.674 11H3.82a13.651 13.651 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm8.999 3.472A7.024 7.024 0 0 0 13.745 12h-1.834a9.278 9.278 0 0 1-.641 1.539 6.688 6.688 0 0 1-.597.933zM10.855 12H8.5v2.923c.67-.204 1.335-.82 1.887-1.855A7.98 7.98 0 0 0 10.855 12zm1.325-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm.312-3.5h2.49a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.91 4a9.277 9.277 0 0 0-.64-1.539 6.692 6.692 0 0 0-.597-.933A7.024 7.024 0 0 1 13.745 4h-1.834zm-1.055 0H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z" />
+                        </svg>
+                    </span>
+                    Free Delivery
+                </div>
+                <div class="col-12 col-sm-3 support-card d-flex align-items-center">
+                    <span class="support-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gift" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z" />
+                        </svg>
+                    </span>
+                    Gift voucher
+                </div>
+                <div class="col-12 col-sm-3 support-card d-flex align-items-center">
+                    <span class="support-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-tv" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3H2c-.325 0-.502.078-.602.145a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
+                        </svg>
+                    </span>
+                    Money back
+                </div>
+                <div class="col-12 col-sm-3 support-card d-flex align-items-center">
+                    <span class="support-icon">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-mic" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                            <path fill-rule="evenodd"
+                                d="M10 8V3a2 2 0 1 0-4 0v5a2 2 0 1 0 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                        </svg>
+                    </span>
+                    Free Support
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- supportview -->
+    <!-- product slider trending -->
+    <section class="trending-products">
+        <!-- product-slider -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="d-inline-flex trend-head">Trending Products</h2>
+                    </div>
+                    <div class="feature d-flex justify-content-center"">
+                    <div class=" d-inline-flex trend-feature-btn">
+                        <button type="button" class="btn feature-btn btn-primary">featured</button>
+                        <button type="button" class="btn feature-btn btn-light">New Arrivals</button>
+                        <button type="button" class="btn feature-btn m-0 btn-light">Best Sellers</button>
+                    </div>
+                </div>
+                <div id="trending" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Printed floral dress</h4>
+                                            <p class="item-price"><strike class="line">$17.00</strike><span
+                                                    class="percent">17%</span><span class="price">$14.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Printed summer dress</h4>
+                                            <p class="item-price"><span class="price">$13.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Printed chiffon dress</h4>
+                                            <p class="item-price"><strike class="line">$14.00</strike><span
+                                                    class="percent">28%</span><span class="price">$10.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress4.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Short sleeves T-Shirt</h4>
+                                            <p class="item-price"><span class="price">$10.00</span></p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Printed floral dress</h4>
+                                            <p class="item-price"><strike class="line">$17.00</strike><span
+                                                    class="percent">17%</span><span class="price">$14.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Printed summer dress</h4>
+                                            <p class="item-price"><span class="price">$13.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Printed chiffon dress</h4>
+                                            <p class="item-price"><strike class="line">$14.00</strike><span
+                                                    class="percent">28%</span><span class="price">$10.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="sale-tag">Sale</span>
+                                        <div class="img-box">
+                                            <img src="assets/dress4.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="d-flex star-rating justify-content-center">
+                                            <ul class="list-inline d-inline-flex">
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Short sleeves T-Shirt</h4>
+                                            <p class="item-price"><span class="price">$10.00</span></p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <div class="d-flex justify-content-center">
+                        <a class="carousel-control-prev" href="#trending" data-slide="prev">
+                            <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                            </svg>
+                        </a>
+                        <a class="carousel-control-next" href="#trending" data-slide="next">
+                            <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- product-slider -->
+
+    </section>
+    <!-- product slider trending -->
+    <!-- Cardlist view -->
+    <section class="card-list">
+        <div class="container-fluid">
+            <div class="row m-0 card-outer w-100">
+                <div class="col-12 col-sm-4 card-sec">
+                    <span class="card-img d-inline-flex">
+                        <img src="assets/B1.jpg" alt="card1">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-4 card-sec">
+                    <div class="col midd-img pb-10">
+                        <span class="card-img d-inline-flex">
+                            <img src="assets/B2.jpg" alt="card1">
+                        </span>
+                    </div>
+                    <div class="col midd-img pt-10">
+                        <span class="card-img d-inline-flex">
+                            <img src="assets/B3.jpg" alt="card1">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 card-sec">
+                    <span class="card-img d-inline-flex">
+                        <img src="assets/B4.jpg" alt="card1">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cardlist view -->
+    <!-- change over view -->
+    <section class="change-over">
+        <div class="row w-100 m-0">
+            <div class="col-12 col-sm-6">
+                <div class="col-12 d-flex justify-content-md-center">
+                    <span class="trend-txt">Trend design!</span>
+                </div>
+                <div class="col-12 d-flex justify-content-md-center">
+                    <h1 class="change-head">Change over</h1>
+                </div>
+                <div class="col-12 d-flex justify-content-md-center form-group">
+                    <button type="button" class="btn upto-btn btn-light">Up To <span class="percentage">50%</span> off
+                        All New Product limit Time offer</button>
+                </div>
+                <div class="col-12 d-flex justify-content-md-center">
+                    <button type="button" class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- change over view -->
+    <!-- partners view -->
+    <section class="partners">
+        <div class="container-fluid">
+            <div class="row w-100 m-0">
+                <div class="col-12 col-sm-2 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/c1.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/c2.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/c3.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/c4.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/c5.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/c6.jpg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- partners view -->
+    <!-- Top collections view -->
+    <section class="top-collection">
+        <div class="container-fluid">
+            <div class="row w-100 m-0">
+                <div class="col-12 col-md-4 mob-pad-0 order-1">
+                    <span class="top-collect-img d-inline-flex">
+                        <img src="assets/B5.jpg" alt="womens collection">
+                    </span>
+                </div>
+                <div class="col-12 col-md-8 mob-pad-0 mob-m order-2">
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <h1 class="collection-head">Women's Top Collections</h1>
+                    </div>
+                    <div id="topcollection" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <span class="sold-out">Sold Out</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <div class="d-flex slider-arrow justify-content-center">
+                            <a class="carousel-control-prev" href="#topcollection" data-slide="prev">
+                                <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                                </svg>
+                            </a>
+                            <a class="carousel-control-next" href="#topcollection" data-slide="next">
+                                <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <button type="button" class="btn btn-primary">All products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top collections view -->
+    <!-- Top collections view -->
+    <section class="top-collection">
+        <div class="container-fluid">
+            <div class="row w-100 m-0">
+                <div class="col-12 col-md-4 mob-pad-0 mob-m order-2">
+                    <span class="top-collect-img d-inline-flex">
+                        <img src="assets/B6.jpg" alt="mens collection">
+                    </span>
+                </div>
+                <div class="col-12 col-md-8 mob-pad-0 order-1">
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <h1 class="collection-head">Men's Dress Collections</h1>
+                    </div>
+                    <div id="topmencollection" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <span class="sold-out">Sold Out</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <div class="d-flex slider-arrow justify-content-center">
+                            <a class="carousel-control-prev" href="#topmencollection" data-slide="prev">
+                                <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                                </svg>
+                            </a>
+                            <a class="carousel-control-next" href="#topmencollection" data-slide="next">
+                                <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <button type="button" class="btn btn-primary">All products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top collections view -->
+    <!-- Top collections view -->
+    <section class="top-collection">
+        <div class="container-fluid">
+            <div class="row w-100 m-0">
+                <div class="col-12 col-md-4 mob-pad-0 order-1">
+                    <span class="top-collect-img d-inline-flex">
+                        <img src="assets/B7.jpg" alt="womens collection">
+                    </span>
+                </div>
+                <div class="col-12 col-md-8 mob-m mob-pad-0 order-2">
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <h1 class="collection-head">Goggles & Purse</h1>
+                    </div>
+                    <div id="goggle" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <span class="sold-out">Sold Out</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <div class="d-flex slider-arrow justify-content-center">
+                            <a class="carousel-control-prev" href="#goggle" data-slide="prev">
+                                <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                                </svg>
+                            </a>
+                            <a class="carousel-control-next" href="#goggle" data-slide="next">
+                                <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <button type="button" class="btn btn-primary">All products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top collections view -->
+    <!-- Top collections view -->
+    <section class="top-collection">
+        <div class="container-fluid">
+            <div class="row w-100 m-0">
+                <div class="col-12 col-md-4 mob-pad-0 mob-m order-2">
+                    <span class="top-collect-img d-inline-flex">
+                        <img src="assets/B8.jpg" alt="mens collection">
+                    </span>
+                </div>
+                <div class="col-12 col-md-8 mob-pad-0 order-1">
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <h1 class="collection-head">Shoes Collection</h1>
+                    </div>
+                    <div id="shoescollection" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <span class="sold-out">Sold Out</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <div class="d-flex slider-arrow justify-content-center">
+                            <a class="carousel-control-prev" href="#shoescollection" data-slide="prev">
+                                <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                                </svg>
+                            </a>
+                            <a class="carousel-control-next" href="#shoescollection" data-slide="next">
+                                <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-md-center">
+                        <button type="button" class="btn btn-primary">All products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top collections view -->
+    <!-- latest news -->
+    <section class="latest-news-sec">
+        <!-- product-slider -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="d-inline-flex trend-head">Latest News</h2>
+                    </div>
+
+                    <div id="latestnews" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="assets/d1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <span class="caldr-icon"><i class="fa fa-calendar"
+                                                        aria-hidden="true"></i>
+                                                </span><span class="date-cldr">July 16</span>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p class="discription">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                                    cursus scelerisque lacus quis porttitor. Vivamus nec nisi quis lorem
+                                                    consequat pellentesque.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="assets/d2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <span class="caldr-icon"><i class="fa fa-calendar"
+                                                        aria-hidden="true"></i>
+                                                </span><span class="date-cldr">July 16</span>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p class="discription">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                                    cursus scelerisque lacus quis porttitor. Vivamus nec nisi quis lorem
+                                                    consequat pellentesque.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="assets/d3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <span class="caldr-icon"><i class="fa fa-calendar"
+                                                        aria-hidden="true"></i>
+                                                </span><span class="date-cldr">July 16</span>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p class="discription">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                                    cursus scelerisque lacus quis porttitor. Vivamus nec nisi quis lorem
+                                                    consequat pellentesque.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="assets/d1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <span class="caldr-icon"><i class="fa fa-calendar"
+                                                        aria-hidden="true"></i>
+                                                </span><span class="date-cldr">July 16</span>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p class="discription">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                                    cursus scelerisque lacus quis porttitor. Vivamus nec nisi quis lorem
+                                                    consequat pellentesque.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="assets/d2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <span class="caldr-icon"><i class="fa fa-calendar"
+                                                        aria-hidden="true"></i>
+                                                </span><span class="date-cldr">July 16</span>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p class="discription">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                                    cursus scelerisque lacus quis porttitor. Vivamus nec nisi quis lorem
+                                                    consequat pellentesque.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="assets/d3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <span class="caldr-icon"><i class="fa fa-calendar"
+                                                        aria-hidden="true"></i>
+                                                </span><span class="date-cldr">July 16</span>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p class="discription">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                                                    cursus scelerisque lacus quis porttitor. Vivamus nec nisi quis lorem
+                                                    consequat pellentesque.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <div class="d-flex justify-content-center">
+                            <a class="carousel-control-prev" href="#latestnews" data-slide="prev">
+                                <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                                </svg>
+                            </a>
+                            <a class="carousel-control-next" href="#latestnews" data-slide="next">
+                                <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product-slider -->
+
+    </section>
+    <!-- latest news -->
+    <!-- Testimonials -->
+    <section class="testimonials">
+
+        <div class="container-fluid">
+            <div class="row w-100 m-0">
+                <div class="d-flex w-100 justify-content-center">
+                    <h2 class="d-inline-flex tsm-head">Testimonials</h2>
+                </div>
+            </div>
+            <div id="testimonials" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <span class="avatar-view">
+                                <img src="assets/avatar1" alt="First slide">
+                            </span>
+                        </div>
+                        <div class="row w-100 m-0">
+                            <div class="col d-flex justify-content-center">
+                                <div class="d-inline-flex flex-row flex-wrap">
+                                    <h5 class="d-flex w-100 tmname justify-content-center">Emmalee Mclain</h5>
+                                    <p class="d-flex w-100 tmdesignation justify-content-center"><i>Designer</i></p>
+                                    <p class="tmdiscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Quisque id quam commodo,
+                                        maximus lorem ut, venenatis quam. Sed commodo quis mauris vel egestas. Vivamus
+                                        ornare enim eget purus blandit, ut eleifend eros molestie. Donec vel finibus
+                                        justo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <span class="avatar-view">
+                                <img src="assets/avatar2.jpg" alt="Second slide">
+                            </span>
+                        </div>
+                        <div class="row w-100 m-0">
+                            <div class="col d-flex justify-content-center">
+                                <div class="d-inline-flex flex-row flex-wrap">
+                                    <h5 class="d-flex w-100 tmname justify-content-center">Larry Lin</h5>
+                                    <p class="d-flex w-100 tmdesignation justify-content-center"><i>Designer</i></p>
+                                    <p class="tmdiscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Quisque id quam commodo,
+                                        maximus lorem ut, venenatis quam. Sed commodo quis mauris vel egestas. Vivamus
+                                        ornare enim eget purus blandit, ut eleifend eros molestie. Donec vel finibus
+                                        justo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <span class="avatar-view">
+                                <img src="assets/avatar3.jpg" alt="Third slide">
+                            </span>
+                        </div>
+                        <div class="row w-100 m-0">
+                            <div class="col d-flex justify-content-center">
+                                <div class="d-inline-flex flex-row flex-wrap">
+                                    <h5 class="d-flex w-100 tmname justify-content-center">Carrie Blount</h5>
+                                    <p class="d-flex w-100 tmdesignation justify-content-center"><i>Designer</i></p>
+                                    <p class="tmdiscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Quisque id quam commodo,
+                                        maximus lorem ut, venenatis quam. Sed commodo quis mauris vel egestas. Vivamus
+                                        ornare enim eget purus blandit, ut eleifend eros molestie. Donec vel finibus
+                                        justo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonials" data-slide-to="1"></li>
+                    <li data-target="#testimonials" data-slide-to="2"></li>
+                </ol>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Testimonials -->
+    <!-- Todays deals -->
+    <section class="trending-products todaysdeal">
+        <!-- product-slider -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="d-inline-flex trend-head">Today's Detail</h2>
+                    </div>
+                    <div id="todays" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress4.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/hat.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/glass.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <span class="sold-out">Sold Out</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress5.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Short sleeves T-Shirt</h4>
+                                                <p class="item-price"><span class="price">$10.00</span></p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress1.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Printed floral dress</h4>
+                                                <p class="item-price"><strike class="line">$17.00</strike><span
+                                                        class="percent">17%</span><span class="price">$14.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress2.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Printed summer dress</h4>
+                                                <p class="item-price"><span class="price">$13.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress3.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Printed chiffon dress</h4>
+                                                <p class="item-price"><strike class="line">$14.00</strike><span
+                                                        class="percent">28%</span><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="sale-tag">Sale</span>
+                                            <div class="img-box">
+                                                <img src="assets/dress4.jpg" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex star-rating timer-star justify-content-center">
+                                                <ul class="list-inline d-inline-flex">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                            <div class="thumb-content timer-view">
+                                                <p class="timer">
+                                                    <span>141 :</span>
+                                                    <span>10 :</span>
+                                                    <span>23 :</span>
+                                                    <span class="last">30</span>
+                                                </p>
+                                                <h4>Short sleeves T-Shirt</h4>
+                                                <p class="item-price"><span class="price">$10.00</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <div class="d-flex justify-content-center">
+                            <a class="carousel-control-prev" href="#todays" data-slide="prev">
+                                <svg class="preview-arrow" id="i-arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M10 6 L2 16 10 26 M2 16 L30 16" />
+                                </svg>
+                            </a>
+                            <a class="carousel-control-next" href="#todays" data-slide="next">
+                                <svg class="preview-arrow" id="i-arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M22 6 L30 16 22 26 M30 16 L2 16" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product-slider -->
+
+    </section>
+    <!-- Todays deals -->
+    <!-- instagram -->
+    <section class="instagram">
+        <div class="container-fluid pad-0">
+            <div class="row insta-outer w-100 m-0">
+                <div class="instal-follow">
+                    <div>
+                        <h4>Follow Us</h4>
+                        <p class="m-0">@instagram</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-2 pad-0 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/d1.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 pad-0 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/d2.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 pad-0 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/d3.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 pad-0 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/d1.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 pad-0 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/d2.jpg" alt="">
+                    </span>
+                </div>
+                <div class="col-12 col-sm-2 pad-0 d-inline-flex justify-content-center">
+                    <span class="partner-img d-inline-flex">
+                        <img src="assets/d3.jpg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- instagram -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="row w-100 m-0">
+            <div class="d-flex w-100 justify-content-center">
+                <div class="footer-top">
+                    <h1>st<span>y</span>le</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id quam commodo, maximus lorem
+                        ut,
+                        venenatis quam. Sed commodo quis mauris vel egestas.</p>
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="row w-100 m-0">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h2>Store information</h2>
+                        <ul class="location-sec">
+                            <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 40005, Silver Business
+                                Point India</li>
+                            <li><span><i class="fa fa-phone" aria-hidden="true"></i></span>9876543210</li>
+                            <li><span><i class="fa fa-envelope" aria-hidden="true"></i></span>info@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h2>Product</h2>
+                        <ul class="footerlist">
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h2>Our company</h2>
+                        <ul class="footerlist">
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                            <li>Lorem ipsum</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="email-sec-outer">
+                            <div class="letter-icon">
+                                <span>
+                                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <h2 class="letter-head">Our Newsletter !</h2>
+                            <p class="letter-para">Sign up for latest offers and promotions</p>
+                            <div class="form-group email-sec">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter Your E-mail">
+                                <button type="button" class="btn submit btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer navigation -->
+        <nav class="navbar navbar-expand-sm bg-dark bg-custom-dark navbar-dark">
+            <div class="row vw-100">
+                <ul class="navbar-nav col">
+                    <li class="nav-item active">
+                        <a class="nav-link copyright" href="#"><i class="fa fa-copyright"></i> 2020, Style sectioned
+                            Shopify Theme powered by Shopify</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav d-none d-sm-flex xs-row col justify-content-md-end">
+                    <li class="nav-item top-nav-icon-outer active">
+                        <a class="nav-link li-icon" href="#">
+                            <img draggable="false" src="assets/master.png" alt="master">
+                        </a>
+                    </li>
+                    <li class="nav-item active top-nav-icon-outer">
+                        <a class="nav-link li-icon" href="#">
+                            <img draggable="false" src="assets/visa.png" alt="visa">
+                        </a>
+                    </li>
+                    <li class="nav-item active top-nav-icon-outer">
+                        <a class="nav-link li-icon" href="#">
+                            <img draggable="false" src="assets/amex.png" alt="amex">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- footer navigation -->
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
